@@ -13,6 +13,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .btn {
@@ -222,6 +223,10 @@ img {
   text-align: center;
 }
 
+.produtos-lista li img {
+  margin: 0 auto;
+}
+
 .produtos-lista li h3 {
   font-weight: bold;
   font-size: 18px;
@@ -248,7 +253,7 @@ img {
 .produtos-icone {
   /* Fazendo com que a div que contém a imagem tenha fundo preto, diferente da section */
   background: #000000;
-  padding: 20px 50px;
+  padding: 20px;
 }
 
 .call {
