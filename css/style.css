@@ -11,6 +11,10 @@ p {
   line-height: 20px;
 }
 
+img {
+  display: block;
+}
+
 .btn {
   border: 3px solid #fec63e;
   padding: 12px 30px;
@@ -111,7 +115,7 @@ p {
   /* Fazendo com que a imagem cubra todo o seu tamanho */
   background-size: cover;
   /* Descendo o conteúdo abaixo do header (porque ele é fixed) */
-  margin-top: 96px;
+  margin-top: 92px;
   /* Alinha todo o conteúdo de introdução ao centro */
   text-align: center;
   /* Espaçamento que o conteúdo deve ter do topo */
@@ -232,4 +236,56 @@ p {
 
 .portfolio .call p {
   color: #ffffff;
+}
+
+/* Qualidade */
+
+.qualidade {
+  padding: 60px 0;
+}
+
+.qualidade:after {
+  content: "";
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url("../img/linhas.svg") no-repeat center;
+  /* Faz com que as linhas sejam absolutas no container qualidade */
+  position: absolute;
+  top: 209px;
+  right: 162px;
+  /* Garantindo que as linhas fiquem por trás de tudo */
+  z-index: -1;
+}
+
+.qualidade-lista {
+  padding-top: 20px;
+}
+
+.qualidade img {
+  margin: 0 auto;
+}
+
+.qualidade-lista li {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.qualidade-lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.qualidade-lista li h3:after {
+  content: "";
+  /* Ao criá-lo, ocupa uma nova linha, não ficando ao lado do elemento parágrafo */
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000000;
+  margin: 6px auto;
 }
