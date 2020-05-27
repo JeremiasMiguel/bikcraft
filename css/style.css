@@ -58,6 +58,25 @@ img {
   margin: 8px auto;
 }
 
+.subtitulo-interno {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subtitulo-interno:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000000;
+  margin: 8px 0;
+}
+
 /* Header */
 
 .header {
@@ -103,6 +122,10 @@ img {
 }
 
 .header-menu ul li a:hover {
+  color: #ffffff;
+}
+
+.header-menu ul li a.menu-ativo {
   color: #ffffff;
 }
 
@@ -162,6 +185,32 @@ img {
   letter-spacing: 0.1em;
 }
 
+/* Introdução interna */
+
+.introducao-interna {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 30px;
+}
+
+.introducao-interna h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.introducao-interna h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffffff;
+  margin: 6px auto 10px auto;
+}
+
 /* Produtos */
 
 .produtos {
@@ -199,7 +248,7 @@ img {
 .produtos-icone {
   /* Fazendo com que a div que contém a imagem tenha fundo preto, diferente da section */
   background: #000000;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .call {
@@ -260,6 +309,8 @@ img {
 
 .qualidade-lista {
   padding-top: 20px;
+  /* Limpa a flutuação dos elementos (clear fix) */
+  overflow: auto;
 }
 
 .qualidade img {
