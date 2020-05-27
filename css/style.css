@@ -27,6 +27,33 @@ p {
   border-color: #ffffff;
 }
 
+.btn.btn-preto:hover {
+  color: #000000;
+  border-color: #000000;
+}
+
+.subtitulo {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  /* Espaçando o subtítulo dos 3 grids de produtos */
+  margin-bottom: 40px;
+}
+
+.subtitulo:after {
+  content: "";
+  /* Ao criá-lo, ocupa uma nova linha, não ficando ao lado do elemento parágrafo */
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000000;
+  margin: 8px auto;
+}
+
 /* Header */
 
 .header {
@@ -40,6 +67,9 @@ p {
   background: #fec63e;
   /* Espaçamento do que está dentro do header em relação a borda do mesmo */
   padding: 15px 0;
+  /* Faz com que o menu fique em cima de todas as sections do site, com isso,
+  as sections não passam por cima desse header */
+  z-index: 10;
 }
 
 .header-menu {
@@ -126,4 +156,55 @@ p {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.1em;
+}
+
+/* Produtos */
+
+.produtos {
+  padding: 60px 0;
+}
+
+.produtos-lista li {
+  background: #fec63e;
+  text-align: center;
+}
+
+.produtos-lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.produtos-lista li h3:after {
+  content: "";
+  /* Ao criá-lo, ocupa uma nova linha, não ficando ao lado do elemento parágrafo */
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000000;
+  margin: 2px auto;
+}
+
+.produtos-lista li p {
+  padding: 10px 20px 20px 20px;
+}
+
+.produtos-icone {
+  /* Fazendo com que a div que contém a imagem tenha fundo preto, diferente da section */
+  background: #000000;
+  padding: 20px;
+}
+
+.call {
+  padding-top: 40px;
+  text-align: center;
+  /* Limpa os elementos deixando-os separados em linha, fazendo o padding-top funcionar */
+  clear: both;
+}
+
+.call p {
+  margin-bottom: 20px;
 }
