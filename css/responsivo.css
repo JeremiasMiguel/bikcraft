@@ -151,4 +151,10 @@
   .orcamento-dados ul {
     padding-right: 0px;
   }
+
+  /* Contato */
+  .form-contato {
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
 }
